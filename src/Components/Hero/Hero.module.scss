@@ -1,0 +1,147 @@
+@import "../../style/style.scss";
+
+.hero {
+	position: relative;
+	overflow: hidden;
+}
+.wrapper {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+}
+
+.title {
+	color: var(--title-hero);
+	font-size: 72px;
+	font-weight: 900;
+	line-height: 90px;
+	letter-spacing: 1px;
+}
+
+.text {
+	margin-top: 12px;
+	margin-bottom: 32px;
+	color: var(--text-hero);
+	font-family: Roboto;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 36px;
+}
+
+.blockImage {
+	position: relative;
+	width: 630px;
+	height: 600px;
+	.leaf {
+		position: absolute;
+		left: -68px;
+		bottom: -30px;
+		z-index: -1;
+	}
+}
+
+.background {
+	position: absolute;
+	right: 0px;
+	top: 50%;
+	transform: translateY(-50%);
+	max-width: 50%;
+	object-position: left;
+	object-fit: contain;
+	height: 100%;
+	width: auto;
+	z-index: -2;
+
+	@media (max-width: 576px) {
+		top: 0;
+		bottom: 0;
+		height: 200px;
+		max-width: 60%;
+		object-position: right;
+		transform: none;
+	}
+}
+
+@media (max-width: 992px) {
+	.title {
+		font-size: 65px;
+		line-height: 65px;
+	}
+	.text {
+		margin-bottom: 24px;
+		font-size: 20px;
+		line-height: 27px;
+	}
+	.blockImage {
+		width: 315px;
+		height: 300px;
+		.leaf {
+			width: 151px;
+			height: 151px;
+			left: -33px;
+			bottom: -15px;
+		}
+	}
+}
+@media (max-width: 834px) {
+	.title {
+		font-size: 45px;
+	}
+	.text {
+		font-size: 18px;
+	}
+	.blockImage {
+		.leaf {
+			left: -34px;
+			bottom: -15px;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.title {
+		font-size: 40px;
+		line-height: 45px;
+	}
+	.text {
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.blockImage {
+		width: 275px;
+		height: 250px;
+		.leaf {
+			left: -34px;
+			bottom: -15px;
+		}
+	}
+}
+
+@media (max-width: 576px) {
+	.wrapper {
+		padding: 0;
+		flex-direction: column-reverse;
+	}
+	.title {
+		font-size: 40px;
+		line-height: 50px;
+	}
+	.text {
+		margin-top: 8px;
+		margin-bottom: 16px;
+		font-size: 15px;
+		line-height: 24px;
+	}
+
+	.blockImage {
+		width: 200px;
+		height: 190px;
+		.leaf {
+			width: 151px;
+			height: 151px;
+			left: -34px;
+			bottom: -15px;
+		}
+	}
+}

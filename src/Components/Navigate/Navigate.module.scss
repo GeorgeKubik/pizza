@@ -1,0 +1,28 @@
+@import '../../style/style.scss';
+
+.listItem {
+    color: var(--nav-text);
+    font-size: 18px;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.listItem:hover {
+    color: var(--nav-text-hover);
+}
+
+@media (max-width: 992px) {
+    .listItem {
+        text-align: center;
+        width: 200px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        font-weight: 700;
+        color: var(--nav-text-white);
+        border-bottom: 1px solid #1d2228;
+    }
+    .listItem:last-child {
+        border-bottom: none;
+    }
+}

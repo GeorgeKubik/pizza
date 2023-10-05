@@ -1,0 +1,124 @@
+:root {
+    /* Colors */
+    --blackpure: #000000;
+    --red: #e52d2d;
+    --light-red: #ff3c3c;
+    --dark-red: #bf221e;
+    --gray: #848a9a;
+    --whitepure: #ffffff;
+    --dim-gray: #eff0f1;
+    --light-beige: #f8f6f3;
+    --dark-gray: #313945;
+    --white-gray: #c5cbd1;
+    --medium-gray: #b2b2b2;
+    --light-gray: #f1f1f1;
+    /* Header */
+    --bg-translate: var(--dim-gray);
+    --text-translate: var(--blackpure);
+    /* Hamburger */
+    --hamburger-line: var(--blackpure);
+    /* Nav */
+    --nav-text: var(--blackpure);
+    --nav-text-white: var(--whitepure);
+    --nav-text-hover: var(--red);
+    --nav-bg: var(--dark-gray);
+    --nav-logo-sidebar: var(--whitepure);
+    /* contact */
+    --contact-text-black: var(--blackpure);
+    --contact-text-white: var(--whitepure);
+    --contact-substring-gray: var(--gray);
+    --contact-substring-white: var(--whitepure);
+    /* basket */
+    --basket-text: var(--blackpure);
+    --basket-substring: var(--gray);
+    /* hero */
+    --title-hero: var(--blackpure);
+    --text-hero: var(--blackpure);
+    /* button */
+    --btn-text: var(--whitepure);
+    --btn-bg: var(--red);
+    --btn-bg-hover: var(--light-red);
+    --btn-bg-active: var(--dark-red);
+    /* stock */
+    --stock-title: var(--blackpure);
+    --stock-descr: var(--blackpure);
+    /* Menu */
+    --menu-title: var(--blackpure);
+    --menu-filter: var(--blackpure);
+    --menu-icon: var(--white-gray);
+    --menu-filter-hover: var(--red);
+    /* card */
+    --card-bg: var(--whitepure);
+    --card-title: var(--blackpure);
+    --card-title-hover: var(--red);
+    --card-descr: var(--gray);
+    --card-size: #82909c;
+    --card-size-subtitle: var(--blackpure);
+    --card-icon: var(--white-gray);
+    /* delivery */
+    --delivery-bg: var(--light-beige);
+    --delivery-title: var(--blackpure);
+    --delivery-bg-item: var(--whitepure);
+    --delivery-title-item: var(--blackpure);
+    --delivery-text-item: var(--blackpure);
+    /* about */
+    --title-about: var(--blackpure);
+    --descr-about: var(--blackpure);
+    /* follow */
+    --follow-title: var(--blackpure);
+    --follow-link: var(--gray);
+    /* footer */
+    --footer-bg: var(--blackpure);
+    --footer-logo: var(--whitepure);
+    --footer-contact: var(--whitepure);
+    --footer-policy: var(--whitepure);
+
+    /* form */
+    --form-bg: var(--whitepure);
+    --form-title: var(--blackpure);
+    --form-total: var(--blackpure);
+    --form-contact-title: var(--blackpure);
+    --form-payment: var(--blackpure);
+    --form-control-hover: var(--blackpure);
+    --form-control-checked: var(--red);
+    --form-control-disabled-border: var(--medium-gray);
+    --form-control-disabled-bg: var(--light-gray);
+    --form-control-disabled-active: var(--medium-gray);
+    --form-control-disabled: var(--medium-gray);
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1312px;
+    height: 100%;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 1115px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 900px;
+    }
+}
+
+@media (max-width: 834px) {
+    .container {
+        max-width: 772px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 288px;
+    }
+}

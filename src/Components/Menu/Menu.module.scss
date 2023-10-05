@@ -1,0 +1,116 @@
+@import '../../style/style.scss';
+
+.menu {
+    padding-top: 112px;
+    min-height: 2000px;
+}
+.wrapper {
+    margin: 0 auto;
+}
+.title {
+    color: var(--menu-title);
+    text-align: center;
+    font-size: 52px;
+    font-weight: 900;
+    line-height: 65px;
+    letter-spacing: 1px;
+}
+.filterBlock {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.filter {
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.filterText {
+    color: var(--menu-filter);
+    font-size: 18px;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.filterText:hover {
+    color: var(--menu-filter-hover);
+}
+.filterIcon {
+    color: var(--menu-icon);
+    transform: translateY(100%);
+    transition: all 0.5s;
+    opacity: 0;
+}
+.filter:hover .filterIcon {
+    transform: translateY(-5%);
+    opacity: 1;
+}
+
+.menuWrapper {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(288px, 1fr));
+    justify-content: center;
+    gap: 32px;
+}
+.hoverEffect {
+    color: var(--menu-filter-hover);
+}
+
+.animationIcon {
+    animation: iconUp 0.1s 1 ease-out forwards;
+}
+@media (max-width: 1440px) {
+    .filter {
+        margin-top: 20px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 834px) {
+    .menu {
+        padding-top: 80px;
+    }
+    .title {
+        font-size: 40px;
+        line-height: 60px;
+    }
+    .menuWrapper {
+        padding: 0 31px;
+    }
+    .filterText {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .menu {
+        padding-top: 60px;
+    }
+    .menuWrapper {
+        margin-top: 20px;
+    }
+    .title {
+        font-size: 28px;
+        line-height: 35px;
+    }
+    .filter {
+        margin-top: 24px;
+    }
+    .filterText {
+        display: none;
+    }
+    .filterIcon {
+        transform: none;
+        opacity: 1;
+    }
+    .filterIcon:hover {
+        color: var(--menu-filter-hover);
+    }
+    .menuWrapper {
+        gap: 12px;
+    }
+}

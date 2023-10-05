@@ -1,0 +1,74 @@
+@import "../../style/style.scss";
+
+.btn {
+	position: relative;
+	box-sizing: content-box;
+	color: var(--btn-text);
+	font-size: 18px;
+	font-weight: 900;
+	line-height: normal;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	background: var(--btn-bg);
+	border-radius: 5px;
+	transition: all 0.3s;
+	position: relative;
+	border: 3px solid var(--btn-bg);
+	z-index: 2;
+
+	&::before {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 0;
+		left: 0;
+		top: 50%;
+		background: var(--btn-bg-hover);
+		transform: translateY(-50%);
+		transition:
+			transform 0.2s linear,
+			height 0.2s linear;
+		z-index: -1;
+	}
+
+	&:hover::before {
+		height: 100%;
+	}
+}
+
+.btn:active {
+	background: var(--dark-red);
+}
+.btn:focus {
+	border: 3px solid #8fc9ff;
+}
+.large {
+	padding: 16px 80px;
+}
+
+.small {
+	padding: 12px 72px;
+}
+.extraSmall {
+	padding: 12px 33px;
+}
+
+@media (max-width: 834px) {
+	.large {
+		padding: 18px 70px;
+	}
+	.small {
+		padding: 9px 54px;
+	}
+}
+@media (max-width: 576px) {
+	.btn {
+		font-size: 17px;
+	}
+	.large {
+		padding: 14px 62px;
+	}
+	.small {
+		padding: 4px 21px;
+	}
+}
