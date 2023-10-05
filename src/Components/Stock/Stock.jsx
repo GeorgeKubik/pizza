@@ -72,9 +72,6 @@ const Stock = () => {
                         <DotGroup />
                     </CarouselProvider>
                 </div>
-                {/* <div className={styles.sliderWrapper}>
-          <SliderSingle />
-        </div> */}
             </div>
         </section>
     );
